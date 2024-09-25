@@ -13,6 +13,7 @@ import {
     SheetTitle,
     SheetTrigger,
 } from "@/components/ui/sheet"
+import Footer from "./Footer"
 
 const MobileNavbar = ({ user }: MobileNavProps) => {
     const pathName = usePathname();
@@ -73,7 +74,7 @@ const MobileNavbar = ({ user }: MobileNavProps) => {
                             </nav>
                         </SheetClose>
 
-                        FOOTER
+                        <Footer user={user} type="mobile"/>
                     </div>
 
 
